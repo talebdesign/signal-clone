@@ -16,7 +16,9 @@ const registerScreenOptions = {
 };
 
 const globalScreenOptions = {
-	headerStyle: { backgroundColor: 'blue' },
+	headerStyle: {
+		backgroundColor: 'blue',
+	},
 	headerTitleStyle: { color: 'white' },
 	headerTintColor: 'white',
 };

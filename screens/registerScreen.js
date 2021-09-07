@@ -2,7 +2,6 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useState, useLayoutEffect } from 'react';
 import { Button, Input } from 'react-native-elements';
 import { StyleSheet, Text, View, KeyboardAvoidingView } from 'react-native';
-import { NavigationHelpersContext } from '@react-navigation/core';
 
 const register = () => {};
 
@@ -24,7 +23,7 @@ export default function registerScreen({ navigation }) {
 			<StatusBar type='Light' />
 
 			<Text h3 style={{ marginBottom: 50, fontSize: 30 }}>
-				Enter following informations
+				Create a signal account
 			</Text>
 			<View style={styles.inputContainer}>
 				<Input
@@ -52,6 +51,7 @@ export default function registerScreen({ navigation }) {
 					placeholder='Profile picture Url (optional)'
 					value={imgUrl}
 					onChange={(text) => setImgUrl(text)}
+					onSubmit={register}
 				/>
 			</View>
 			<Button raised title='Register' onPress={register} />
